@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mark Dolan</title>
+    <title>Daniel Dolan</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -21,33 +21,48 @@
           ><img src="images/avatar.jpg" alt=""
         /></a>
         <h1>
-          <strong>Mark Dolan</strong>
+          <strong>Daniel Dolan</strong>
         </h1>
-        <h1>Software Developer</h1>
-      </div>
+		<h1><p style="display:inline">
+			<span class="typed1"></span>
+        </p> Developer</h1>
+	  </div>
+	  <ul class="nav flex-column" style="list-style: none; box-sizing: inherit; padding-left: 0">
+		<li class="nav-item" style="padding-left: 0;">
+			<a class="nav-link scrollLink" href="#home">Home</a>
+		  </li>
+		<li class="nav-item" style="padding-left: 0;">
+		  <a class="nav-link scrollLink" href="#about">About</a>
+		</li>
+		<li class="nav-item" style="padding-left: 0;">
+		  <a class="nav-link scrollLink" href="#portfolio">Portfolio</a>
+		</li>
+		<li class="nav-item" style="padding-left: 0;">
+		  <a class="nav-link scrollLink" href="#skills">Skills</a>
+		</li>
+		<li class="nav-item" style="padding-left: 0;">
+			<a class="nav-link scrollLink" href="#contact">Contact</a>
+		  </li>
+	  </ul>
+	  
     </header>
 
     <!-- Main -->
-    <div id="main">
+    <div id="main" class="main">
 	  <!-- One -->
 	  <section id="picture-intro">
-        <header class="major">
+        <header class="major" id="home">
           <h2>
           </h2>
         </header>
         <p>
 			<span class="typed"></span>
         </p>
-        <ul class="actions">
-          <li><a href="#" class="button">Resume</a></li>
-          <!-- <li><a href="#" class="button">Learn More</a></li>
-          <li><a href="#" class="button">Learn More</a></li> -->
-        </ul>
       </section>
       <section id="one">
-        <header class="major">
+        <header class="major" id="about">
           <h2>
-            Hey! My name is Mark and I'm <br />
+            Hey! My name is Daniel and I'm <br />
             a developer from Houston, TX.
           </h2>
         </header>
@@ -62,7 +77,7 @@
           exhilarating experience.
         </p>
         <ul class="actions">
-          <li><a href="#" class="button">Resume</a></li>
+          <li><a href="http://daniel-dolan-resume.s3-website.us-east-2.amazonaws.com/" target="_blank" class="button">Resume</a></li>
           <!-- <li><a href="#" class="button">Learn More</a></li>
           <li><a href="#" class="button">Learn More</a></li> -->
         </ul>
@@ -71,14 +86,15 @@
       <!-- Two -->
       <section id="two">
         <h2>Recent Work</h2>
-        <div class="row">
+        <div class="row" id="portfolio">
           <article class="col-12 work-item special">
-            <a href="images/fulls/01.jpg" class="image fit thumb"
-              ><img src="images/tribuo.png" alt=""
+            <a class="image fit thumb gifSet1"
+              ><img src="images/tribuo.png" alt="" class="preset-file1"
+            /><img style="display: none;" src="images/tribuo.gif" alt="" class="gif-file1"
             /></a>
             <h3>
-              <strong>Tribuo</strong> | <a href="#" class="">Source Code</a> |
-              <a href="#" class="">Live Demo</a>
+              <strong>Tribuo</strong> | <a href="https://github.com/daniel1dolan/Tribuo" class="">Source Code</a> |
+              <a href="ec2-3-133-153-214.us-east-2.compute.amazonaws.com" class="">Live Demo</a>
             </h3>
             <p>
               Tribuo is a full-stack web app that enables task management and
@@ -86,12 +102,13 @@
             </p>
           </article>
           <article class="col-12 work-item special">
-            <a href="images/fulls/02.jpg" class="image fit thumb"
-              ><img src="images/alcoholmatcher.png" alt=""
-            /></a>
+            <a class="image fit thumb gifSet2"
+              ><img src="images/alcoholmatcher.png" alt="" class="preset-file2"
+            /><img style="display:none" src="images/alcoholmatcher.gif" alt="" class="gif-file2"
+            /></a> 
             <h3>
-              AlcoholMatcher | <a href="#" class="">Source Code</a> |
-              <a href="#" class="">Live Demo</a>
+              AlcoholMatcher | <a href="https://github.com/daniel1dolan/AlchoholMatcher" class="">Source Code</a> |
+              <a href="http://danieldolan.dev.s3-website.us-east-2.amazonaws.com/" class="">Live Demo</a>
             </h3>
             <p>
               A quiz application created with Javascript, HTML, and CSS which
@@ -100,12 +117,13 @@
             </p>
           </article>
           <article class="col-12 work-item special">
-            <a href="images/fulls/03.jpg" class="image fit thumb"
-              ><img src="images/blackjack.png" alt=""
+            <a href="images/fulls/03.jpg" class="image fit thumb gifSet3" 
+              ><img src="images/blackjack.png" alt="" class="preset-file3"
+            /><img style="display: none" src="images/blackjack.gif" alt="" class="gif-file3"
             /></a>
             <h3>
-              Blackjack | <a href="#" class="">Source Code</a> |
-              <a href="#" class="">Live Demo</a>
+              Blackjack | <a href="https://github.com/daniel1dolan/javascript/tree/master/blackjack" class="">Source Code</a> |
+              <a href="http://daniel-dolan-blackjack.s3-website.us-east-2.amazonaws.com" class="">Live Demo</a>
             </h3>
             <p>
               A front-end web app that simulates a game of blackjack with dealer
@@ -114,13 +132,23 @@
               actions held inside of objects. There are added feature which allows for betting on each hand. The biggest challeng of the project was in the ace logic which took problem solving to break down each scenario into logic.
             </p>
           </article>
-          <!-- <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/04.jpg" class="image fit thumb"
-              ><img src="images/thumbs/04.jpg" alt=""
+          <article class="col-6 col-12-xsmall work-item">
+            <a class="image fit thumb gifSet4"
+              ><img src="images/bandSite.png" alt="" class="preset-file4"
+            /><img style="display:none" src="images/bandSite.gif" alt="" class="gif-file4"
             /></a>
-            <h3>Quam neque phasellus</h3>
-            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-          </article>
+            <h3>Band Site: Tame Impala | <a href="#" class="">Source Code</a> </h3>
+            <p>A forum for Tame Impala which displays their albums and allows chat and comments with express and socket.io.</p>
+		  </article>
+		  <article class="col-6 col-12-xsmall work-item">
+            <a class="image fit thumb gifSet5"
+              ><img src="images/rpgGame.png" alt="" class="preset-file5"
+            /><img style="display:none" src="images/rpgGame.gif" alt="" class="gif-file5"
+            /></a>
+            <h3>RPG Game w/Python | <a href="#" class="">Source Code</a></h3>
+            <p>An RPG game with text art created solely with python.</p>
+		  </article>
+		  <!--
           <article class="col-6 col-12-xsmall work-item">
             <a href="images/fulls/05.jpg" class="image fit thumb"
               ><img src="images/thumbs/05.jpg" alt=""
@@ -143,69 +171,94 @@
 
       <section>
         <h1>Skills</h1>
-        <div class="container">
+        <div class="container" id="skills">
           <div class="row">
+			<div class="transform col">
+				<h3 class="icon brands">
+				  <i class="devicon-amazonwebservices-original"></i>
+				  <span class="label fSize">AWS</span>
+				</h3>
+			  </div>
             <div class="transform col">
             <h3 class="icon brands fa-html5">
-              <span class="label">HTML5</span>
+              <span class="label fSize">HTML5</span>
             </h3>
           </div>
           <div class="transform col">
             <h3 class="icon brands fa-css3">
-              <span class="label">CSS3</span>
+              <span class="label fSize">CSS3</span>
             </h3>
           </div>
           <div class="transform col">
             <h3 class="icon brands fa-bootstrap">
-              <span class="label">Bootstrap</span>
+              <span class="label fSize">Bootstrap4</span>
+            </h3>
+		  </div>
+		  <div class="transform col">
+            <h3 class="icon brands">
+              <i class="devicon-git-plain"></i>
+              <span class="label fSize">Git</span>
+            </h3>
+		  </div>
+		  <div class="transform col">
+            <h3 class="icon brands">
+              <i class="devicon-github-plain"></i>
+              <span class="label fSize">GitHub</span>
             </h3>
           </div>
           <div class="transform col">
             <h3 class="icon brands fa-js">
-              <span class="label">JavaScript</span>
+              <span class="label fSize">JavaScript</span>
+            </h3>
+		  </div>
+		  <div class="transform col">
+            <h3 class="icon brands">
+				<i class="devicon-jquery-plain"></i>
+              <span class="label fSize">jQuery</span>
             </h3>
           </div>
           <div class="transform col">
             <h3 class="icon brands fa-react">
-              <span class="label">React</span>
+              <span class="label fSize">React</span>
             </h3>
           </div>
           <div class="transform col">
             <h3 class="icon brands fa-node">
-              <span class="label">Node.js</span>
+              <span class="label fSize">Node.js</span>
             </h3>
           </div>
           <div class="transform col">
             <h3 class="icon brands">
               <i class="devicon-express-original-wordmark"></i>
-              <span class="label">Express</span>
+              <span class="label fSize">Express</span>
             </h3>
           </div>
           <div class="transform col">
             <h3 class="icon brands">
               <i class="devicon-postgresql-plain-wordmark"></i>
-              <span class="label">PostgreSQL</span>
+              <span class="label fSize">PostgreSQL</span>
+            </h3>
+		  </div>
+		  <div class="transform col">
+            <h3 class="icon brands">
+              <i class="devicon-sequelize-plain"></i>
+              <span class="label fSize">Sequelize</span>
             </h3>
           </div>
           <div class="transform col">
             <h3 class="icon brands fa-python">
-              <span class="label">Python</span>
+              <span class="label fSize">Python</span>
             </h3>
           </div>
         </div>
       </section>
 
       <!-- Three -->
-      <!-- <section id="three">
-        <h2>Get In Touch</h2>
-        <p>
-          Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-          magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-          vulputate lorem neque lorem ipsum dolor.
-        </p>
+      <section id="three">
+        <h2 id="contact">Get In Touch</h2>
         <div class="row">
-          <div class="col-8 col-12-small">
-            <form method="post" action="#">
+          <!-- <div class="col-8 col-12-small">
+             <form method="post" action="#">
               <div class="row gtr-uniform gtr-50">
                 <div class="col-6 col-12-xsmall">
                   <input type="text" name="name" id="name" placeholder="Name" />
@@ -227,37 +280,35 @@
                   ></textarea>
                 </div>
               </div>
-            </form>
-            <ul class="actions">
+            </form> -->
+            <!-- <ul class="actions">
               <li><input type="submit" value="Send Message" /></li>
             </ul>
-          </div>
+          </div> -->
           <div class="col-4 col-12-small">
             <ul class="labeled-icons">
               <li>
                 <h3 class="icon solid fa-home">
-                  <span class="label">Address</span>
+                  <!-- <span class="label">Address</span> -->
                 </h3>
-                1234 Somewhere Rd.<br />
-                Nashville, TN 00000<br />
-                United States
+                Houston, Texas.
               </li>
               <li>
                 <h3 class="icon solid fa-mobile-alt">
-                  <span class="label">Phone</span>
+                  <!-- <span class="label">Phone</span> -->
                 </h3>
-                000-000-0000
+                713-882-6813
               </li>
               <li>
                 <h3 class="icon solid fa-envelope">
-                  <span class="label">Email</span>
+                  <!-- <span class="label">Email</span> -->
                 </h3>
-                <a href="#">hello@untitled.tld</a>
+                <a href="mailto:daniel.dolan654321@gmail.com">daniel.dolan654321@gmail.com</a>
               </li>
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Four -->
       <!--
@@ -575,35 +626,35 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						</section>
 
 					</section>
-				--></div>
+				</div>-->
 
     <!-- Footer -->
     <footer id="footer">
       <div class="inner">
         <ul class="icons">
-          <li>
+          <!-- <li>
             <a href="#" class="icon brands fa-twitter"
               ><span class="label">Twitter</span></a
             >
-          </li>
+          </li> -->
           <li>
-            <a href="#" class="icon brands fa-github"
+            <a href="https://github.com/daniel1dolan" class="icon brands fa-github"
               ><span class="label">Github</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon brands fa-linkedin"
+            <a href="https://www.linkedin.com/in/daniel-dolan-538810186/" class="icon brands fa-linkedin"
               ><span class="label">Linkedin</span></a
             >
           </li>
           <li>
-            <a href="#" class="icon solid fa-envelope"
+            <a href="mailto:daniel.dolan654321@gmail.com" target="_blank" class="icon solid fa-envelope"
               ><span class="label">Email</span></a
             >
           </li>
         </ul>
         <ul class="copyright">
-          <li>&copy; Untitled</li>
+          <li>&copy; daniel-dolan-portfolio </li>
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
       </div>
