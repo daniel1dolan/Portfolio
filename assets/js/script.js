@@ -53,4 +53,8 @@ $(() => {
     $(".preset-file6").toggle();
     $(".gif-file6").toggle();
   });
+  $("img", ".gifSet7").hover(function (e) {
+    $(".preset-file7").toggle();
+    $(".gif-file7").toggle();
+  });
 });
